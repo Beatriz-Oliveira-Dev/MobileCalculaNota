@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/eTPrimeiroB"
+        android:layout_width="309dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Nota Primeiro Bimestre"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.267" />
+
+    <EditText
+        android:id="@+id/eTSegundoB"
+        android:layout_width="309dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Nota Segundo Bimestre"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTPrimeiroB"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <EditText
+        android:id="@+id/eTTerceiroB"
+        android:layout_width="309dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Nota Terceiro Bimestre"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTSegundoB"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <EditText
+        android:id="@+id/eTQuartoB"
+        android:layout_width="309dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Nota Quarto Bimestre"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTTerceiroB"
+        app:layout_constraintVertical_bias="0.114" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="202dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="32dp"
+        android:text="Calcular Media"
+        android:onClick="mostrarMedia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTQuartoB"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tVResultado"
+        android:layout_width="279dp"
+        android:layout_height="92dp"
+        android:text="Seja Bem-Vindo ao App Notas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular"
+        app:layout_constraintVertical_bias="0.491" />
+</androidx.constraintlayout.widget.ConstraintLayout>
